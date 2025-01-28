@@ -6,11 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		F3AE1C752D442C6B00C4CA0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B5E4562CCBFC1C000DEBF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B5E45D2CCBFC1C000DEBF7;
+			remoteInfo = Watz;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F3AE1C712D442C6B00C4CA0F /* WatzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B5E45E2CCBFC1C000DEBF7 /* Watz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C2E1242D024AF3001FF8A1 /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = System/Library/Frameworks/SwiftData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		F3AE1C722D442C6B00C4CA0F /* WatzTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WatzTests;
+			sourceTree = "<group>";
+		};
 		F3B5E4602CCBFC1C000DEBF7 /* Watz */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Watz;
@@ -19,6 +36,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F3AE1C6E2D442C6B00C4CA0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3B5E45B2CCBFC1C000DEBF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				F3B5E4602CCBFC1C000DEBF7 /* Watz */,
+				F3AE1C722D442C6B00C4CA0F /* WatzTests */,
+				F3C2E1232D024AF3001FF8A1 /* Frameworks */,
 				F3B5E45F2CCBFC1C000DEBF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,13 +67,45 @@
 			isa = PBXGroup;
 			children = (
 				F3B5E45E2CCBFC1C000DEBF7 /* Watz.app */,
+				F3AE1C712D442C6B00C4CA0F /* WatzTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F3C2E1232D024AF3001FF8A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2E1242D024AF3001FF8A1 /* SwiftData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F3AE1C702D442C6B00C4CA0F /* WatzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3AE1C772D442C6B00C4CA0F /* Build configuration list for PBXNativeTarget "WatzTests" */;
+			buildPhases = (
+				F3AE1C6D2D442C6B00C4CA0F /* Sources */,
+				F3AE1C6E2D442C6B00C4CA0F /* Frameworks */,
+				F3AE1C6F2D442C6B00C4CA0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3AE1C762D442C6B00C4CA0F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F3AE1C722D442C6B00C4CA0F /* WatzTests */,
+			);
+			name = WatzTests;
+			packageProductDependencies = (
+			);
+			productName = WatzTests;
+			productReference = F3AE1C712D442C6B00C4CA0F /* WatzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F3B5E45D2CCBFC1C000DEBF7 /* Watz */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3B5E46C2CCBFC1D000DEBF7 /* Build configuration list for PBXNativeTarget "Watz" */;
@@ -77,9 +135,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					F3AE1C702D442C6B00C4CA0F = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = F3B5E45D2CCBFC1C000DEBF7;
+					};
 					F3B5E45D2CCBFC1C000DEBF7 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -100,11 +162,19 @@
 			projectRoot = "";
 			targets = (
 				F3B5E45D2CCBFC1C000DEBF7 /* Watz */,
+				F3AE1C702D442C6B00C4CA0F /* WatzTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F3AE1C6F2D442C6B00C4CA0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3B5E45C2CCBFC1C000DEBF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +185,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F3AE1C6D2D442C6B00C4CA0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3B5E45A2CCBFC1C000DEBF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +201,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F3AE1C762D442C6B00C4CA0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B5E45D2CCBFC1C000DEBF7 /* Watz */;
+			targetProxy = F3AE1C752D442C6B00C4CA0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F3AE1C782D442C6B00C4CA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPGAG7V84D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caasitroplla.WatzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Watz";
+			};
+			name = Debug;
+		};
+		F3AE1C792D442C6B00C4CA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPGAG7V84D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caasitroplla.WatzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Watz";
+			};
+			name = Release;
+		};
 		F3B5E46A2CCBFC1D000DEBF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -255,11 +378,13 @@
 				DEVELOPMENT_TEAM = PPGAG7V84D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +409,13 @@
 				DEVELOPMENT_TEAM = PPGAG7V84D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +432,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F3AE1C772D442C6B00C4CA0F /* Build configuration list for PBXNativeTarget "WatzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AE1C782D442C6B00C4CA0F /* Debug */,
+				F3AE1C792D442C6B00C4CA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3B5E4592CCBFC1C000DEBF7 /* Build configuration list for PBXProject "Watz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
